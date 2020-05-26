@@ -1,0 +1,364 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: #eee;
+    font-size: 1.2rem;
+    margin: 0; 
+    padding: 0;
+}
+
+
+/*
+Código para cambiar de color la página
+**/
+/* .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.caja-switch{
+    /* height: 100vh;
+    width: 10vw; */
+    display: flex;
+    /* justify-content: center; */
+    justify-content: left;
+    align-items: center;
+    /* background: #2E2D42; */
+}
+body.dark{
+    color: #fff;
+}
+.dark{
+    background-color: #2b314f;
+}
+.btn-switch{
+    background-color: #343d5b; /*Fondo */
+    border-radius: 100px; /*Border */
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.btn-switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+ 
+.btn-switch.active{
+    background-color: #ff6347;
+    color: #000000;
+}
+
+.btn-switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+.span-switch{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+} 
+/**
+Fin Código para cambiar de color la página
+**/
+
+
+.nav-bar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.nav-bar li{
+    float: left;
+}
+
+.nav-bar li:hover{
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.active{
+    background-color: rgba(128, 235, 146, 0.8);
+}
+.nav-bar li:active{
+
+    background-color: rgba(128, 235, 146, 0.8);
+}
+
+.nav-bar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.9rem;
+    text-decoration: none;
+}
+
+.list{
+    /* float: left; */
+    margin-top: 1.8rem;
+    width: 200px;
+    height: 200px;
+}
+
+.list ul{
+    text-align: center;
+    list-style-type: none;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+
+}
+
+.list li{
+
+    text-align: left;
+    border-top: solid 1px #ddd;
+    padding: 10px;
+}
+
+.header,.container-bajo,.footer{
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 2px;
+    /* border-top: solid 0px; */
+    border-top: solid 1px #eee;
+    margin-bottom: .5rem;
+    padding: 10px;
+    
+}
+
+.header{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: sticky;
+    top: 0;  */
+    /* margin-top: 3.2rem; */
+    /* font-family: "Times New Roman"; */
+    /* text-align: justify; */
+    /* text-indent: 200px; */
+    line-height: 50px;
+    word-spacing: 20px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px;
+}
+
+.container-bajo{
+    /* padding: 10px; */
+    /* border-top: solid 1px #eee; */
+    background-image: linear-gradient(#fff , #ccc);
+    box-shadow: 2px 2px 2px;
+}
+
+
+.footer{
+    /* padding: 10px;
+    border-top: solid 1px #eee; */
+    /* background-image: linear-gradient(to top right, #fff , #ccc); */
+    background-image: linear-gradient(250deg , rgba(255, 255, 255, 0.7) , rgba(100, 100, 100, 0.3));
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.btn-primay{
+    background-color: #0090ff;
+    /* border: solid 1.5px #5a5a5a; */
+    padding: 5px;
+    border: 0px;
+    color: #fff;
+}
+
+.btn-secundario{
+    background-color: #aaa;
+    padding: 5px;
+    border: 0px;
+    color: #fff;
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 1rem 1rem;
+    /* min-height: 50px; */
+    max-width: 300px;
+    font-weight: bold;
+    padding: 20px 25px;
+    text-align: center;
+    transition: all 0.30s ease;
+}
+
+.red{
+    border-left: 2px solid red;
+}
+
+.red:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.green{
+    border-left: 2px solid green;
+}
+
+.green:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blue{
+    border-left: 2px solid blue;
+}
+
+.blue:hover{
+    background-color: rgba(0, 0, 255, 0.1);
+    
+}
+
+/*
+Inicio del Formulario CSS
+*/
+
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    /* margin: 8px 0; */
+    font-family: inherit; 
+    font-size: inherit; 
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number]{
+    width: 100%;
+    padding: 10px 15px;
+    /* margin: 8px 0; */
+    font-family: inherit; 
+    font-size: inherit;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#message{
+    width: 100%;
+    padding: 10px 15px;
+    /* margin: 8px 0; */
+    font-family: inherit;
+    font-size: inherit; 
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: rgba(128, 235, 146, 0.9);
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0px 0px 0px;
+    font-family: inherit; 
+    font-size: 2rem;
+    border: 1.5px solid rgba(143, 250, 161, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    color: #fff;
+    background-color: rgba(128, 235, 146, 0.5);
+    border: solid 1.5px rgba(46, 119, 58, 0.1);
+}
+input[type=submit]:active{
+    color: black;
+}
+
+.general{
+    /* display: inline; */
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.section{
+    
+    /* margin-top: 3.2rem; */
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 1px 1px;
+    text-align: center;   
+}
+
+.box-form{
+    margin: 1rem;
+    float: left;
+    padding: 0px 15px;
+}
+
+.fieldset{
+    background-color: #fff;
+    border-color: rgba(128, 235, 146, 0.8);
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashed{
+    width: 400px;
+    word-wrap: break-word;
+    height: auto;
+    border: 3px dashed black;
+    padding: 1rem;
+}
+
+.titleBoxDashed{
+    text-align: center;
+    background-color: #c1c1c1;
+}
+   
+.box-form>p{
+        color:red;
+        font-weight: bold;
+}
+
+.box-form>p>span{
+        color:black;
+        font-weight: normal;
+}
+
+
+/*
+Fin formulario en CSS
+*/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en, es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Javascript</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+
+    <div class="nav-bar">
+        <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <!-- <li><a href="#">Blog</a></li>
+            <li><a href="#">Acerca de</a></li> -->
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </div>
+    <!-- Crear un formulario con los campos:
+    1. Nombre, Apellido y Edad
+    2. Boton de enviar el formulario: eventos submit
+    3. Mostrar datos por pantalla
+    4. validación del formulario -->
+    <div class="general">
+        <div class="section">
+            <h3>Validar formulario con Eventos y Funciones en Javascript</h3>
+        </div>
+    <div class="box-form">
+        <fieldset class="fieldset">
+            <legend>Datos Personales</legend>
+            <form action="#" onsubmit="return false;" method="POST" id="form">
+
+                <p><label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <span id="errorName"></span>
+                </p>
+
+                <p><label for="lastName">Apellido</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <span id="errorLastName"></span>
+                </p>
+
+                <p><label for="age">Edad</label>
+                    <input type="number" name="age" id="age">
+                    <span id="errorAge"></span>
+                </p>
+                <p><label for="message">Mensaje</label>
+                    <textarea name="message" id="message"></textarea>
+                </p>
+
+                <p><input type="submit" value="Enviar" id="submit">
+                </p>
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="box-form dashed">
+        <H3 class="titleBoxDashed">Información del Usuario</H3>
+        <hr>
+        <p id="p_name">
+            Nombre: <span></span>
+        </p>
+        <p id="p_lastName">
+            Apellido: <span></span>
+        </p>
+        <p id="p_age">
+            Edad: <span></span>
+        </p>
+        <p id="p_message">
+            Mensaje: <span></span>
+        </p>
+    </div>
+</div>
+</body>
+
+</html>
